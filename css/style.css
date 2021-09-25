@@ -1,0 +1,53 @@
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        div.parent {
+            height: 500px;
+            background-color: rgb(243, 243, 23);
+        }
+
+        div.child {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(48, 27, 27);
+
+
+        }
+
+        div.parent:hover div.child {
+            animation: 1s move ease;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+
+            animation-direction: alternate;
+
+
+        }
+
+        div.child-2 {
+            width: 100px;
+            height: 100px;
+            margin-left: 100px;
+            border-radius: 50%;
+            background-color: blanchedalmond;
+            animation: 1s move ease;
+            animation-fill-mode: forwards; animation-iteration-count: infinite;
+
+            animation-direction: alternate;
+            
+
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(0vw);
+            }
+
+            100% {
+                transform: translate(80vw);
+            }
+        }
